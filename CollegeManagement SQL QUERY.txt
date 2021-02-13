@@ -1,0 +1,20 @@
+create database CollegeManagement;
+use CollegeManagement;
+create table Student(userid varchar(20),password varchar(20),
+fname varchar(20),lname varchar(20),email varchar(20)); 
+select * from Student;
+create table admin(userid varchar(20),password varchar(20));
+insert into admin values("Nupur@12","123456");
+select * from admin;
+
+CREATE TABLE IF NOT EXISTS `register` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `sex` varchar(100) NOT NULL,
+  `country` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+
+select * from register;
